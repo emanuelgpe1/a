@@ -218,7 +218,7 @@ Titulo_2.TextWrapped = true
 
 -- Scripts:
 
-local function NLJPSF_fake_script() -- Naval.LocalScript 
+local function OHLAE_fake_script() -- Naval.LocalScript 
 	local script = Instance.new('LocalScript', Naval)
 
 	local localplayer = game.Players.LocalPlayer
@@ -2820,8 +2820,8 @@ local function NLJPSF_fake_script() -- Naval.LocalScript
 	
 	
 end
-coroutine.wrap(NLJPSF_fake_script)()
-local function ZOMW_fake_script() -- Gui.LocalScript 
+coroutine.wrap(OHLAE_fake_script)()
+local function OGBSHYW_fake_script() -- Gui.LocalScript 
 	local script = Instance.new('LocalScript', Gui)
 
 	local localplayer = game.Players.LocalPlayer
@@ -2835,8 +2835,8 @@ local function ZOMW_fake_script() -- Gui.LocalScript
 	
 	
 end
-coroutine.wrap(ZOMW_fake_script)()
-local function USEEO_fake_script() -- Emanuel.LocalScript 
+coroutine.wrap(OGBSHYW_fake_script)()
+local function WWTFM_fake_script() -- Emanuel.LocalScript 
 	local script = Instance.new('LocalScript', Emanuel)
 
 	local localplayer = game.Players.LocalPlayer
@@ -2850,8 +2850,8 @@ local function USEEO_fake_script() -- Emanuel.LocalScript
 	
 	
 end
-coroutine.wrap(USEEO_fake_script)()
-local function MLPZ_fake_script() -- Cores.LocalScript 
+coroutine.wrap(WWTFM_fake_script)()
+local function WGVV_fake_script() -- Cores.LocalScript 
 	local script = Instance.new('LocalScript', Cores)
 
 	local localplayer = game.Players.LocalPlayer
@@ -3365,8 +3365,8 @@ local function MLPZ_fake_script() -- Cores.LocalScript
 	
 	
 end
-coroutine.wrap(MLPZ_fake_script)()
-local function ICCVK_fake_script() -- Cabeao.LocalScript 
+coroutine.wrap(WGVV_fake_script)()
+local function IBBDE_fake_script() -- Cabeao.LocalScript 
 	local script = Instance.new('LocalScript', Cabeao)
 
 	local localplayer = game.Players.LocalPlayer
@@ -3380,8 +3380,8 @@ local function ICCVK_fake_script() -- Cabeao.LocalScript
 	
 	
 end
-coroutine.wrap(ICCVK_fake_script)()
-local function RFQS_fake_script() -- Meep.LocalScript 
+coroutine.wrap(IBBDE_fake_script)()
+local function ILQN_fake_script() -- Meep.LocalScript 
 	local script = Instance.new('LocalScript', Meep)
 
 	local localplayer = game.Players.LocalPlayer
@@ -3397,8 +3397,8 @@ local function RFQS_fake_script() -- Meep.LocalScript
 	
 	
 end
-coroutine.wrap(RFQS_fake_script)()
-local function VUJKN_fake_script() -- Fusao.LocalScript 
+coroutine.wrap(ILQN_fake_script)()
+local function RYRZI_fake_script() -- Fusao.LocalScript 
 	local script = Instance.new('LocalScript', Fusao)
 
 	local localplayer = game.Players.LocalPlayer
@@ -3412,8 +3412,8 @@ local function VUJKN_fake_script() -- Fusao.LocalScript
 	
 	
 end
-coroutine.wrap(VUJKN_fake_script)()
-local function OHENLES_fake_script() -- x.LocalScript 
+coroutine.wrap(RYRZI_fake_script)()
+local function RJKN_fake_script() -- x.LocalScript 
 	local script = Instance.new('LocalScript', x)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -3424,4 +3424,52 @@ local function OHENLES_fake_script() -- x.LocalScript
 	
 	
 end
-coroutine.wrap(OHENLES_fake_script)()
+coroutine.wrap(RJKN_fake_script)()
+local function BEYHJC_fake_script() -- Wait.LocalScript 
+	local script = Instance.new('LocalScript', Wait)
+
+	local dragger = {}; 
+	local resizer = {};
+	
+	do
+		local mouse = game:GetService("Players").LocalPlayer:GetMouse();
+		local inputService = game:GetService('UserInputService');
+		local heartbeat = game:GetService("RunService").Heartbeat;
+		-- // credits to Ririchi / Inori for this cute drag function :)
+		function dragger.new(frame)
+		    local s, event = pcall(function()
+		    	return frame.MouseEnter
+		    end)
+	
+		    if s then
+		    	frame.Active = true;
+	
+		    	event:connect(function()
+		    		local input = frame.InputBegan:connect(function(key)
+		    			if key.UserInputType == Enum.UserInputType.MouseButton1 then
+		    				local objectPosition = Vector2.new(mouse.X - frame.AbsolutePosition.X, mouse.Y - frame.AbsolutePosition.Y);
+		    				while heartbeat:wait() and inputService:IsMouseButtonPressed(Enum.UserInputType.MouseButton1) do
+		    					frame:TweenPosition(UDim2.new(0, mouse.X - objectPosition.X + (frame.Size.X.Offset * frame.AnchorPoint.X), 0, mouse.Y - objectPosition.Y + (frame.Size.Y.Offset * frame.AnchorPoint.Y)), 'Out', 'Quad', 0.1, true);
+		    				end
+		    			end
+		    		end)
+	
+		    		local leave;
+		    		leave = frame.MouseLeave:connect(function()
+		    			input:disconnect();
+		    			leave:disconnect();
+		    		end)
+		    	end)
+		    end
+		end
+		
+		function resizer.new(p, s)
+			p:GetPropertyChangedSignal('AbsoluteSize'):connect(function()
+				s.Size = UDim2.new(s.Size.X.Scale, s.Size.X.Offset, s.Size.Y.Scale, p.AbsoluteSize.Y);
+			end)
+		end
+	end
+	script.Parent.Active = true
+	script.Parent.Draggable = true
+end
+coroutine.wrap(BEYHJC_fake_script)()
