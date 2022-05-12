@@ -158,7 +158,7 @@ UICorner_8.Parent = CONF
 
 -- Scripts:
 
-local function OHOIWD_fake_script() -- FARM.LocalScript 
+local function LJKNZTR_fake_script() -- FARM.LocalScript 
 	local script = Instance.new('LocalScript', FARM)
 
 	local key = script.Parent.Parent.key
@@ -179,8 +179,8 @@ local function OHOIWD_fake_script() -- FARM.LocalScript
 	end)
 	
 end
-coroutine.wrap(OHOIWD_fake_script)()
-local function QMJFXE_fake_script() -- FARM.afk 
+coroutine.wrap(LJKNZTR_fake_script)()
+local function FKOH_fake_script() -- FARM.afk 
 	local script = Instance.new('LocalScript', FARM)
 
 	local FARM = script.Parent 
@@ -196,8 +196,8 @@ local function QMJFXE_fake_script() -- FARM.afk
 	end)
 	
 end
-coroutine.wrap(QMJFXE_fake_script)()
-local function WBZZ_fake_script() -- PVP.LocalScript 
+coroutine.wrap(FKOH_fake_script)()
+local function ROIWS_fake_script() -- PVP.LocalScript 
 	local script = Instance.new('LocalScript', PVP)
 
 	local key = script.Parent.Parent.key
@@ -218,8 +218,8 @@ local function WBZZ_fake_script() -- PVP.LocalScript
 	end)
 	
 end
-coroutine.wrap(WBZZ_fake_script)()
-local function HWPZR_fake_script() -- PVP.afk 
+coroutine.wrap(ROIWS_fake_script)()
+local function FIZCVDG_fake_script() -- PVP.afk 
 	local script = Instance.new('LocalScript', PVP)
 
 	local PVP = script.Parent 
@@ -235,8 +235,8 @@ local function HWPZR_fake_script() -- PVP.afk
 	end)
 	
 end
-coroutine.wrap(HWPZR_fake_script)()
-local function WLZVROR_fake_script() -- TextLabel_3.Rainbower 
+coroutine.wrap(FIZCVDG_fake_script)()
+local function AMCDIPW_fake_script() -- TextLabel_3.Rainbower 
 	local script = Instance.new('LocalScript', TextLabel_3)
 
 	while wait() do
@@ -267,8 +267,8 @@ local function WLZVROR_fake_script() -- TextLabel_3.Rainbower
 		end
 	end
 end
-coroutine.wrap(WLZVROR_fake_script)()
-local function GQKCYO_fake_script() -- ImageButton.fechar 
+coroutine.wrap(AMCDIPW_fake_script)()
+local function TEZTK_fake_script() -- ImageButton.fechar 
 	local script = Instance.new('LocalScript', ImageButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -279,8 +279,8 @@ local function GQKCYO_fake_script() -- ImageButton.fechar
 	
 	
 end
-coroutine.wrap(GQKCYO_fake_script)()
-local function TUBO_fake_script() -- key_2.LocalScript 
+coroutine.wrap(TEZTK_fake_script)()
+local function EWBZ_fake_script() -- key_2.LocalScript 
 	local script = Instance.new('LocalScript', key_2)
 
 	local dragger = {}; 
@@ -327,22 +327,19 @@ local function TUBO_fake_script() -- key_2.LocalScript
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 end
-coroutine.wrap(TUBO_fake_script)()
-local function NLQN_fake_script() -- CONF.LocalScript 
+coroutine.wrap(EWBZ_fake_script)()
+local function WKVR_fake_script() -- CONF.LocalScript 
 	local script = Instance.new('LocalScript', CONF)
 
 	
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet"https://raw.githubusercontent.com/petitebarte/a/main/conf")() 
-		wait(0.1)
-		script.Parent.Parent.Visible = false
-	
 	end)
 	
 	
 end
-coroutine.wrap(NLQN_fake_script)()
-local function RYBFIIK_fake_script() -- CONF.afk 
+coroutine.wrap(WKVR_fake_script)()
+local function HBGPE_fake_script() -- CONF.afk 
 	local script = Instance.new('LocalScript', CONF)
 
 	local FARM = script.Parent 
@@ -358,4 +355,16 @@ local function RYBFIIK_fake_script() -- CONF.afk
 	end)
 	
 end
-coroutine.wrap(RYBFIIK_fake_script)()
+coroutine.wrap(HBGPE_fake_script)()
+local function LSCU_fake_script() -- CONF.fechar 
+	local script = Instance.new('LocalScript', CONF)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+	end)
+	
+	
+	
+	
+end
+coroutine.wrap(LSCU_fake_script)()
