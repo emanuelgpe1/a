@@ -1,8 +1,4 @@
-getgenv().ttp = true;
-	
-		while wait(0.1) do
-			if getgenv().ttp == true then
-		
+
 				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3580.79517, 45.8487473, -345.25647, -0.422592998, 0, -0.906319618, 0, 1, 0, 0.906319618, 0, -0.422592998)
 				wait(0.5)	
 				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3507.55859, 45.9115562, -223.156067, 0, 0, -1, 0, 1, 0, 1, 0, 0)
@@ -81,6 +77,3 @@ getgenv().ttp = true;
 				wait(0.5)
 				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3334.4834, 44.7024765, -48.8334999, 0, 0, 1, 0, 1, -0, -1, 0, 0)
 				wait(0.5)
-
-			end
-		end
